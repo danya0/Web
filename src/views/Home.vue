@@ -587,8 +587,8 @@ export default {
           } else {
             // colors and reglaments
             this.$store.commit('basic', {
-              key: this.navStack[this.navStack.length - 1].key,
-              value: this.storeNavigator[this.navStack[this.navStack.length - 1].greedPath].items
+              key: this.navStack[this.navStack.length - 1]?.key,
+              value: this.storeNavigator[this.navStack[this.navStack.length - 1]?.greedPath]?.items
             })
           }
         }
