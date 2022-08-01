@@ -80,6 +80,9 @@
       <dashboard
         v-if="greedPath === 'dashboard'"
       />
+      <clients
+        v-if="greedPath === 'clients'"
+      />
       <other
         v-if="greedPath === 'other'"
       />
@@ -153,6 +156,7 @@ import { USER_REQUEST } from '@/store/actions/user'
 import * as TASK from '@/store/actions/tasks'
 import initWebSync from '@/websync/index.js'
 import initInspectorSocket from '@/inspector/index.js'
+import Clients from '../components/Clients/Clients.vue'
 
 export default {
   components: {
@@ -180,7 +184,8 @@ export default {
     ReglamentContent,
     Employees,
     Colors,
-    Assignments
+    Assignments,
+    Clients
   },
   data () {
     return {
