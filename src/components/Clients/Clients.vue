@@ -3,11 +3,10 @@
     <div class="font-['Roboto'] text-[#424242] text-[19px] leading-[22px] font-bold mb-2">
       Клиенты
     </div>
-    <button>123</button>
     <ModalBoxAddClient
       v-if="showModalBoxAddClient"
       :show="showModalBoxAddClient"
-      title="Добавления сотрудника"
+      title="Добавления клиента"
       ok="Добавить"
       @ok="AddClient"
       @cancel="showModalBoxAddClient = false"
@@ -85,6 +84,11 @@ export default {
     ModalBoxAddClient,
     ClientCard,
     ListBlocAdd
+  },
+  data () {
+    return {
+      showModalBoxAddClient: false
+    }
   },
   computed: {
     clients () {
