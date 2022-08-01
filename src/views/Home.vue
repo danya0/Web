@@ -67,9 +67,6 @@
         v-if="greedPath === 'reglaments'"
         :items="greedSource"
       />
-      <Clitens
-        v-if="greedPath === 'clients'"
-      />
       <boards
         v-if="greedPath === 'new_private_boards'"
         :boards="greedSource"
@@ -135,7 +132,7 @@ import Overlay from '@/components/modals/Overlay.vue'
 import TasksListNew from '@/components/TasksListNew.vue'
 import MainSection from '@/components/MainSection.vue'
 import Projects from '@/components/Projects.vue'
-import Clitens from '@/components/Clients/Clients.vue'
+import Clients from '@/components/Clients/Clients.vue'
 import Reglaments from '@/components/Reglaments/Reglaments.vue'
 import Boards from '@/components/Boards.vue'
 import BoardWithChildren from '@/components/Board/BoardWithChildren.vue'
@@ -171,7 +168,7 @@ export default {
     TasksListNew,
     Projects,
     Reglaments,
-    Clitens,
+    Clients,
     Boards,
     Doitnow,
     Dashboard,
