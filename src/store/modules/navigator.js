@@ -311,6 +311,15 @@ const mutations = {
     ])
     state.menu.push([
       {
+        label: 'Клиенты',
+        uid: '757be87d-c269-40e0-b117-6b2bb0e4f97d',
+        bold: false,
+        type: 'greed',
+        path: 'clients'
+      }
+    ])
+    state.menu.push([
+      {
         label: 'Прочее',
         uid: '757be87d-c269-40e0-b224-6b2bb0e4f97d',
         bold: false,
