@@ -1,10 +1,11 @@
 <template>
   <ListBlocItem
-    :title="employee.name"
+    :title="client.name"
+    :sub-title="client.email"
   >
     <img
       class="w-[20px] h-[20px] rounded"
-      :src="employee.img"
+      :src="client.img"
     >
   </ListBlocItem>
 </template>
@@ -17,7 +18,7 @@ export default {
     ListBlocItem
   },
   props: {
-    employee: {
+    client: {
       type: Object,
       default: () => ({})
     }
