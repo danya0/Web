@@ -4,8 +4,8 @@
       Клиенты
     </div>
     <ClientCard
-      v-for="i in 5"
-      :key="i"
+      v-for="client in clients"
+      :key="client.uid"
       class="mb-2"
       :client="client"
     />
@@ -21,14 +21,9 @@ export default {
     ClientCard,
     ListBlocAdd
   },
-  data () {
-    return {
-      client: {
-        name: 'Кто-то там',
-        img: 'https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/reserve/D9xlw7UxTBqQw5sLf8cJ_reef_insp-72.jpg',
-        email: 'sobaka@mail.ru',
-        phone: '88005553535'
-      }
+  computed: {
+    clients () {
+      return this.$store.state.clients.clients
     }
   }
 }
